@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaTech - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="NovaTech logo" style="height: 60px;">
+    <h1>NovaTech</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#produits">Produits</a>
+      <a href="#panier">Panier</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Bienvenue chez NovaTech</h2>
+    <p>Des ordinateurs fiables et performants, à prix abordables.</p>
+    <a href="#produits" class="cta">Voir nos ordinateurs</a>
+    <section id="produits">
+      <h2>Nos Ordinateurs</h2>
+      <div class="products">
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200" alt="PC Gamer Orion">
+          <h3>PC Gamer Orion</h3>
+          <p>Intel i7, RTX 4070, 16Go RAM, 1To SSD</p>
+          <p><strong>1399€</strong></p>
+          <button onclick="ajouterAuPanier('PC Gamer Orion')">Ajouter au panier</button>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200" alt="PC Pro Titan">
+          <h3>PC Pro Titan</h3>
+          <p>AMD Ryzen 9, Radeon RX 7900, 32Go RAM, 2To SSD</p>
+          <p><strong>1799€</strong></p>
+          <button onclick="ajouterAuPanier('PC Pro Titan')">Ajouter au panier</button>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200" alt="PC Compact Nova">
+          <h3>PC Compact Nova</h3>
+          <p>Intel i5, Intel Iris, 8Go RAM, 512Go SSD</p>
+          <p><strong>799€</strong></p>
+          <button onclick="ajouterAuPanier('PC Compact Nova')">Ajouter au panier</button>
+        </div>
+      </div>
+    </section>
+    <section id="panier">
+      <h2>Votre Panier</h2>
+      <ul id="liste-panier"></ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea rows="5" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 NovaTech. Tous droits réservés.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
